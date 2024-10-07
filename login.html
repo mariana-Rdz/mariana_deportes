@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AED</title>
+    <link rel="icon" type="image/svg+xml" href="/img/deportesisi-removebg-preview.png">
+    <link rel="icon" type="image/png" href="/img/deportesisi-removebg-preview.png">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+</head>
+<body style="background-image: url('/img/provisional.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+
+    <div style="height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        
+        <!-- Cuadro celeste con formulario y bienvenida -->
+        <div class="mt-5 p-4 text-center" style="background-color: #add8e6; border-radius: 15px; width: 300px;">
+            <h2 class="titulo c-marino mb-4">Bienvenido AED</h2>
+            
+            <form action="procesar.php" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Usuario:</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa tu usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+            </form>
+
+            <!-- Texto y botón para registrarse -->
+            <p class="mt-3">¿Aún no tienes una cuenta?</p>
+            <a href="/registro.html" class="btn btn-light px-4" style="border-radius: 100px; font-size: 16px; font-weight: 600;">Registrarse</a>
+        </div>
+
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

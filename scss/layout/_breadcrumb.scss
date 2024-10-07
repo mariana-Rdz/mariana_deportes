@@ -1,0 +1,25 @@
+.innerBreadcrumb {
+    padding: 10px 12px 10px 0;
+    margin-bottom: 20px;
+    .breadcrumb-item {
+        a {
+            color: $c-marino;
+            text-transform: uppercase;
+            font-family: $f-principal;
+            font-weight: 600;
+            font-size: 1.25rem;
+            text-decoration: none;
+            &:hover {
+                color: $c-morado
+            }
+        }
+    }
+    .breadcrumb-item.active {
+        color: $c-azul;
+        text-transform: uppercase;
+        font-family: $f-principal;
+        font-weight: 600;
+        font-size: 1.25rem;
+        text-decoration: none;
+    }
+}

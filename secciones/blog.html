@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AED</title>
+     <link rel="icon" type="image/svg+xml" href="/img/deportesisi-removebg-preview.png">
+    <link rel="icon" type="image/png" href="/img/deportesisi-removebg-preview.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <!--Script App-->
+    <script src="/js/boletines_blog.js"></script>
+    <script src="/js/historias_blog.js"></script>
+    <script src="/js/experiencia_blog.js"></script>
+
+
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+<!--Crea el error de menu
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>-->
+
+    <!--Librería necesaria para consumir apis -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<!--Momment libreria necesaria para manipular fechas-->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+
+</head>
+<body>
+    <nav class="navbar navbarRuta navbar-expand-lg fixed-top" ref="headRef">
+            
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item my-auto">
+                    <a class="nav-link active" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="/secciones/deportes.html">Deportes</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="/secciones/adaptados.html">Deportes Adaptados</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="/secciones/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Eventos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="my-2">
+                            <a class="dropdown-item" href="/secciones/eventos/nacionales.html">Nacionales</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="dropdown-item" href="/secciones/eventos/internacionales.html">Internacionales</a>
+                        </li>
+                    </ul>
+                </li>
+               
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="/secciones/blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    
+</nav>
+
+    <header class="headerBg_2">
+        <div class="imgWrapper">
+          <img src="/img/bgs/blog.png" alt="">
+        </div>
+        <div class="bgGrafico"></div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+               <h1 class="tituloHeader">Blog</h1>
+            </div>
+          </div>
+        </div>
+        <img src="/img/divider/bottomRight.svg" alt="" class="bRightDivider" />
+    </header>
+
+    <main>
+
+
+<!--JSON HISTORIAS-->
+<div class="container mExtra" id="#historias">
+    <div class="row">
+        <div class="col-lg-12">
+            <span class="tituloMarino">Historias de éxito</span>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="/img/deportes/boxeo/Boxeo 1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">José Luis Ramírez: Novena Medalla de Oro</h5>
+                    <p class="card-text">José Luis se corona como ganador de boxeo el pasado domingo, logrando obtener su novena medalla de oro en Aguascalientes.</p>
+                    <!-- Botón que activa el modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#historiaModal1">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="/img/deportes/gimnasiaArtiaticaM/alexa-moreno.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">María López: Campeona Nacional</h5>
+                    <p class="card-text">María López se consagra como campeona nacional en gimnasia, sumando otro oro para su brillante carrera.</p>
+                    <!-- Botón que activa el modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#historiaModal2">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="/img/deportes/atletismo/Atletismo 2.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Carlos Méndez: Récord en Atletismo</h5>
+                    <p class="card-text">Carlos Méndez rompe el récord nacional en los 400 metros planos, dejando su marca en la historia del deporte.</p>
+                    <!-- Botón que activa el modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#historiaModal3">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="historiaModal1" tabindex="-1" aria-labelledby="historiaModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="historiaModalLabel1">José Luis Ramírez: Novena Medalla de Oro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Aguascalientes, 31 de agosto de 2024 –</p> <p> El joven boxeador José Luis Ramírez ha vuelto a hacer historia al conquistar su novena medalla de oro en el Campeonato Nacional de Boxeo, celebrado anoche en Aguascalientes. Con tan solo 22 años, Ramírez se ha consolidado como una de las promesas más brillantes del boxeo mexicano, demostrando una vez más su destreza y determinación en el cuadrilátero.
+
+                    El combate final fue un espectáculo digno de recordar. Ramírez, conocido por su rapidez y precisión, dominó cada asalto con una maestría que dejó sin opciones a su oponente. En el tercer y último asalto, un gancho derecho perfectamente ejecutado fue suficiente para enviar a su rival a la lona, asegurando así una victoria por nocaut que le valió su novena presea dorada.</p>
+            </div>
+
+
+
+
+
+
+
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="historiaModal2" tabindex="-1" aria-labelledby="historiaModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="historiaModalLabel2">María López: Campeona Nacional</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Aguascalientes, 31 de agosto de 2024 –</p> <p> María López, una talentosa gimnasta de 20 años, ha dejado su huella en la historia del deporte nacional al conquistar su séptima medalla de oro en el Campeonato Nacional de Gimnasia, celebrado este fin de semana en Aguascalientes. Con una ejecución impecable, María se destacó en las pruebas de suelo y barras asimétricas, demostrando su excepcional habilidad y control.
+
+                    En la final, María compitió contra las mejores gimnastas del país. Su rutina en el suelo, que combinó fuerza, flexibilidad y una asombrosa gracia, cautivó al jurado y al público, asegurando así su lugar en lo más alto del podio. Esta victoria no solo reafirma su posición como una de las mejores gimnastas de México, sino que también la prepara para futuros desafíos internacionales.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="historiaModal3" tabindex="-1" aria-labelledby="historiaModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="historiaModalLabel3">Carlos Méndez: Récord en Atletismo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Carlos Martínez, el velocista de 24 años, se consagró campeón en los 400 metros planos del Campeonato Nacional de Atletismo, celebrado en Aguascalientes, obteniendo su tercera medalla de oro consecutiva en esta disciplina. En una carrera que mantuvo a todos al borde de sus asientos, Carlos demostró una vez más por qué es considerado uno de los mejores atletas de México.
+
+                    Desde el disparo de salida, Carlos tomó la delantera y mantuvo un ritmo imparable, superando a sus competidores con una estrategia calculada y una fuerza física impresionante. En la recta final, aceleró aún más, cruzando la meta con un tiempo récord que no solo le aseguró la medalla de oro, sino que también lo coloca como un fuerte candidato para las próximas competiciones internacionales. Con esta victoria, Carlos Martínez sigue demostrando que su disciplina y entrenamiento constante lo mantienen en la cima del atletismo nacional.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+<!--BOLETINES-->
+
+<div class="container mExtra">
+    <div class="row">
+        <div class="col-lg-12">
+            <span class="tituloGris">Aprende Más</span>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Contenido -->
+        <div class="row">
+            <!-- Tarjeta 1: El origen del baloncesto -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-white bg-info">
+                    <div class="card-body">
+                        <h5 class="card-title">El Origen del Baloncesto</h5>
+                        <p class="card-text">El baloncesto fue inventado en 1891 por James Naismith en los Estados Unidos. Originalmente se jugaba con una pelota de fútbol y cestas de duraznos como canastas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2: La primera maratón -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">La Primera Maratón</h5>
+                        <p class="card-text">La primera maratón fue corrida en 490 a.C. por el mensajero griego Filípides, quien corrió desde el campo de batalla de Maratón hasta Atenas para anunciar la victoria sobre los persas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3: La historia del tenis -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">La Historia del Tenis</h5>
+                        <p class="card-text">El tenis tiene sus raíces en un juego francés del siglo XII llamado "jeu de paume". A finales del siglo XIX, el juego evolucionó para convertirse en el tenis moderno que conocemos hoy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+         
+
+
+<!--EXPERIENCIA JSON-->
+<div class="container mExtra" id="historias">
+    <div class="row">
+        <div class="col-lg-12">
+            <span class="tituloMarino">Experiencias</span>
+        </div>
+    </div>
+    <div id="divHistorias" class="row">
+        <!-- Tarjeta 1: María López -->
+        <div class="col-lg-6 col-md-12 mb-4">
+            <div class="card">
+                <img src="/img/deportes/gimnasiaArtiaticaM/alexa_moreno_2.jpg" class="card-img-top" alt="María López en acción">
+                <div class="card-body">
+                    <h5 class="card-title">María López: El Camino hacia el Oro</h5>
+                    <p class="card-text">María López, una talentosa gimnasta de 19 años, ha compartido su inspiradora experiencia en el Campeonato Nacional de Gimnasia. Desde sus inicios en un pequeño gimnasio local hasta convertirse en campeona nacional, María ha superado múltiples desafíos y ha perfeccionado su técnica con años de arduo entrenamiento. Su última victoria le otorgó su séptima medalla de oro, consolidando su posición como una de las mejores gimnastas del país.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 2: Carlos Martínez -->
+        <div class="col-lg-6 col-md-12 mb-4">
+            <div class="card">
+                <img src="/img/deportes/atletismo/Atletismo 1.JPG" class="card-img-top" alt="Carlos Martínez corriendo">
+                <div class="card-body">
+                    <h5 class="card-title">Carlos Martínez: La Velocidad en su Mejor Momento</h5>
+                    <p class="card-text">Carlos Martínez, un destacado atleta en los 400 metros planos, ha compartido su experiencia en el Campeonato Nacional de Atletismo. A lo largo de su carrera, Carlos ha enfrentado numerosas competiciones y desafíos. Su dedicación y entrenamiento intenso le permitieron obtener su tercera medalla de oro consecutiva en los 400 metros, destacándose por su increíble velocidad y estrategia en la pista.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divModals"></div>
+</div>
+
+        
+    </main>
+
+    <footer>
+        <div class="logoWrap">
+            <img src="/img/deportesisi-removebg-preview.png" alt="" class="img-fluid" />
+        </div>
+        <p class="texto text-center" style="color: #78797F;">Copyright © 2024 AED</p>
+    </footer>
+
+    <!--MODAL-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="titulo fs-5" id="exampleModalLabel">Título de artículo</h1>
+                    <span class="fecha">dd/mm/aa</span>
+                    <div class="imgCont">
+                        <img src="/img/default.png" alt="" />
+                    </div>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est. Aliquet bibendum enim facilisis gravida neque. Id aliquet lectus proin nibh nisl condimentum. Dolor sed viverra ipsum nunc. Diam in arcu cursus euismod quis viverra nibh cras. Ac orci phasellus egestas tellus. Sit amet mattis vulputate enim nulla aliquet porttitor. Ullamcorper malesuada proin libero nunc consequat interdum. Et malesuada fames ac turpis egestas sed tempus urna et. At imperdiet dui accumsan sit amet nulla facilisi. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus.</p>
+
+                    <p class="text">Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Tortor pretium viverra suspendisse potenti nullam ac tortor. Quis viverra nibh cras pulvinar mattis. Et malesuada fames ac turpis egestas. Enim ut sem viverra aliquet eget sit amet tellus cras. Id consectetur purus ut faucibus pulvinar elementum integer. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Dui faucibus in ornare quam viverra orci sagittis eu. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Pulvinar elementum integer enim neque. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Semper quis lectus nulla at volutpat. Morbi tristique senectus et netus et malesuada fames ac turpis. Nunc sed id semper risus in hendrerit. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Ultrices gravida dictum fusce ut placerat. Gravida in fermentum et sollicitudin ac orci.</p>
+
+                    <p class="text">Augue lacus viverra vitae congue eu consequat ac felis donec. Est velit egestas dui id ornare arcu odio ut sem. Eget mauris pharetra et ultrices. Diam quam nulla porttitor massa. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Tortor pretium viverra suspendisse potenti nullam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Aliquet risus feugiat in ante metus dictum. Non pulvinar neque laoreet suspendisse interdum consectetur libero. Massa tincidunt nunc pulvinar sapien. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Ut venenatis tellus in metus vulputate. Non curabitur gravida arcu ac tortor dignissim convallis aenean. Cursus vitae congue mauris rhoncus aenean. Ipsum nunc aliquet bibendum enim facilisis. Adipiscing bibendum est ultricies integer. Turpis massa sed elementum tempus egestas sed sed risus. Malesuada bibendum arcu vitae elementum curabitur vitae.</p>
+                </div>
+
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+   
+
+
+</body>
+</html>

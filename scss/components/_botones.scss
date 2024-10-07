@@ -1,0 +1,20 @@
+.btnAzul {
+    font-family: $f-principal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $c-blanco;
+    background-color: $c-marino;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid $c-marino;
+
+    &:hover {
+        background: $c-morado;
+        color: $c-blanco;
+        transition: 0.25s ease-out;
+        border: 1px solid $c-morado;
+    }
+}

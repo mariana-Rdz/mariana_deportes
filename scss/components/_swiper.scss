@@ -1,0 +1,23 @@
+.swiper-wrapper {
+    height: 550px;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 640px) {
+            justify-content: center;
+        }
+    }
+}
+
+.swiper-wrapper.wrapper-inicio {
+    height: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.swiper-pagination {
+    bottom: 0;
+}
+.swiper-pagination-bullet-active {
+    background-color: $c-amarillo !important;
+}

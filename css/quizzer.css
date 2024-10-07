@@ -1,0 +1,882 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+.c-marino {
+  color: #270089;
+}
+
+.c-verde {
+  color: #6AFF7F;
+}
+
+.c-rosa {
+  color: #DF1683;
+}
+
+.c-azul {
+  color: #3CB4E5;
+}
+
+.c-morado {
+  color: #6D3DE7;
+}
+
+.c-amarillo {
+  color: #FFCD00;
+}
+
+.c-gris {
+  color: #D9D9D9;
+}
+
+.c-carbon {
+  color: #292929;
+}
+
+.c-blanco {
+  color: #fff;
+}
+
+.c-negro {
+  color: #000;
+}
+
+.bg-marino {
+  background-color: #270089;
+}
+
+.bg-verde {
+  background-color: #6AFF7F;
+}
+
+.bg-rosa {
+  background-color: #DF1683;
+}
+
+.bg-azul {
+  background-color: #3CB4E5;
+}
+
+.bg-morado {
+  background-color: #6D3DE7;
+}
+
+.bg-amarillo {
+  background-color: #FFCD00;
+}
+
+.bg-gris {
+  background-color: #D9D9D9;
+}
+
+.bg-carbon {
+  background-color: #292929;
+}
+
+.bg-blanco {
+  background-color: #fff;
+}
+
+.bg-negro {
+  background-color: #000;
+}
+
+/*FONDOS CLAROS*/
+.bg-p-morado {
+  background-color: #F2EDFF;
+}
+
+.bg-p-rosa {
+  background-color: #FFE4F3;
+}
+
+.bg-p-azul {
+  background-color: #E4F7FF;
+}
+
+.bg-p-amarillo {
+  background-color: #FFF9DD;
+}
+
+.bg-p-verde {
+  background-color: #E6FFE9;
+}
+
+.bg-p-gris {
+  background-color: #F2F2F2;
+}
+
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyThin.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 200;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyThin Italic.woff") format("woff");
+}
+/*Light*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyLight Italic.woff") format("woff");
+}
+/*regular*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyItalic.woff") format("woff");
+}
+/*Medium*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyMedium Italic.woff") format("woff");
+}
+/*Semi bold*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbySemibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbySemibold Italic.woff") format("woff");
+}
+/*Bold*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyBold Italic.woff") format("woff");
+}
+/*Extra bold*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyExtrabold.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyExtrabold Italic.woff") format("woff");
+}
+/*Heavy*/
+@font-face {
+  font-family: "Visby";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyHeavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 900;
+  src: local("Visby"), url("https://fonts.cdnfonts.com/s/72421/VisbyHeavy Italic.woff") format("woff");
+}
+.titulo {
+  font-family: "Visby";
+  font-weight: 700;
+  font-size: 2.25rem;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #270089;
+}
+@media (max-width: 575.98px) {
+  .titulo {
+    font-size: 1.75rem;
+  }
+}
+
+.subtitulo {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #270089;
+}
+
+.texto {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #292929;
+  line-height: 1.5;
+}
+
+.textoBold {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #292929;
+  line-height: 1.25;
+}
+
+/*BLOCKS EN COLOR*/
+.tituloMarino {
+  font-family: "Visby";
+  font-weight: 700;
+  font-size: 2.25rem;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #270089;
+  display: inline-block;
+  padding: 8px 10px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 575.98px) {
+  .tituloMarino {
+    font-size: 1.75rem;
+  }
+}
+
+
+* {
+	box-sizing: border-box;
+}
+.tituloGris {
+	font-family: "Visby";
+	font-weight: 700;
+	font-size: 2.25rem;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 1.2;
+	color: #292929;
+	background-color: #D9D9D9;
+	display: inline-block;
+	padding: 8px 10px;
+	margin-bottom: 1rem;
+  }
+  @media (max-width: 575.98px) {
+	.tituloGris {
+	  font-size: 1.75rem;
+	}
+  }
+
+button {
+	border: none;
+	border-radius: 6px;
+	padding: 10px 20px;
+	font-size: 20px;
+	background: #fff;
+}
+
+
+header .title {
+	background-color: #270089;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+header h1, header h2 {
+	margin: 0;
+}
+
+header div.countdown {
+	float: right;
+}
+
+header div.points {
+	float: left;
+	-webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+header div.points.animate.right {
+	color: #767D76;
+}
+
+header div.points.animate.wrong {
+	color: #bf0000;
+}
+
+header div.countdown, header div.points {
+	font-weight: bold;
+	margin: 10px;
+	color: #fff;
+	padding: 0px;
+	font-size: 26px;
+}
+
+.card {
+	background-color: red;
+	width: 800px;
+	background-color: #fff;
+	margin: 100px auto 30px auto;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+}
+
+div.start .card {
+	display: block;
+}
+
+div.start .card p, .question.card span.question {
+	font-size: 30px;
+}
+
+.card.question {
+	display: none;
+}
+
+.card.question.active {
+	display: block;
+}
+
+.card.question .options {
+	padding: 0;
+	list-style: none;
+	margin-top: 35px;
+}
+
+.card.question .options > li {
+	margin: 10px 80px;
+	color: #fff;
+}
+
+.card.question .options > li label {
+	background-color: #270089;
+	display: block;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.card.question .options > li label:hover {
+	background-color: #6D3DE7;
+}
+
+.card.question .options > li input:checked + label {
+	background-color: #270089 !important;
+	color: #fff;
+}
+
+.card.question .options > li input {
+	opacity: 0;
+	display: none;
+}
+
+.finish {
+	display: none;
+}
+
+.card.finish p {
+	font-size: 22px;
+}
+
+.card.finish .final_points {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.play_again,
+button.start {
+	width: 200px;
+	margin: 0 auto 20px auto;
+	color: #FFF;
+}
+.ggforms{
+	width: 200px;
+	margin: 0 auto 20px auto;
+	color: #FFF;
+}
+
+.volver_blog{
+	width: 200px;
+	margin: 0 auto 20px auto;
+	color: #FFF;
+
+}
+
+
+
+
+.btnAzul {
+  font-family: "Visby";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #270089;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+.btnAzul:hover {
+  background: #6D3DE7;
+  color: #fff;
+  transition: 0.25s ease-out;
+}
+.btnGris {
+	font-family: "Visby";
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #fff;
+	background-color: #D9D9D9;
+	padding: 12px 18px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+  }
+  .btnGris:hover {
+	background: #bebebe;
+	color: #fff;
+	transition: 0.25s ease-out;
+  }
+.mExtra {
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+@media (max-width: 991px) {
+  .mExtra {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
+
+
+
+
+
+
+.bRightDivider {
+  position: absolute;
+  bottom: -0.5px;
+  width: 100%;
+  height: auto;
+  z-index: 150;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 2% 5%;
+}
+
+.modal-body .imgCont {
+  width: 100%;
+  height: 500px;
+  margin: 1rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  .modal-body .imgCont {
+    height: 350px;
+  }
+}
+.modal-body .imgCont img {
+  width: auto;
+  height: 100%;
+}
+.modal-body .text {
+  text-align: justify;
+}
+
+footer {
+  padding: 50px 10px 30px;
+  border-top: 1px solid #D9D9D9;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .logoWrap {
+  width: 350px;
+  height: 60px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  footer .logoWrap {
+    width: 260px;
+    height: 43px;
+  }
+}
+footer .logoWrap img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.headerBg_2 {
+  position: relative;
+  height: 570px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@media (max-width: 991.98px) {
+  .headerBg_2 {
+    height: 450px;
+  }
+}
+@media (max-width: 575.98px) {
+  .headerBg_2 {
+    height: 370px;
+  }
+}
+.headerBg_2 .bgGrafico {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: url("/img/bgFiguras2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.headerBg_2 .imgWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #3CB4E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -10;
+}
+.headerBg_2 .imgWrapper::before {
+  background-color: #6D3DE7;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  mix-blend-mode: lighten;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.headerBg_2 .imgWrapper img {
+  filter: grayscale(100%) contrast(1) blur(0px);
+  flex: 1 0 100%;
+  height: 100%;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  object-position: 85% 50%;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+}
+.headerBg_2 .tituloHeader {
+  font-family: "Visby";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 6.25rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  word-break: break-all;
+  color: rgba(255, 255, 255, 0.35);
+  -webkit-text-stroke: 2px #fff;
+  margin-bottom: 18%;
+  padding-top: 20px;
+}
+@media (max-width: 1199.98px) {
+  .headerBg_2 .tituloHeader {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .headerBg_2 .tituloHeader {
+    font-size: 3.15rem;
+    -webkit-text-stroke: 1px #fff;
+    margin-bottom: 20%;
+  }
+}
+
+
+
+
+
+#inicio {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+#inicio .bgGrafico {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: url("/src/assets/img/bgFiguras.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#inicio .imgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #6aff7f;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -10;
+}
+#inicio .imgWrapper::before {
+  background-color: #00007e;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  mix-blend-mode: lighten;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#inicio .imgWrapper img {
+  filter: grayscale(100%) contrast(1) blur(0px);
+  flex: 1 0 100%;
+  height: 100%;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  object-position: 85% 50%;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+}
+#inicio .tituloImg {
+  margin-top: 400px;
+}
+@media (max-width: 575.98px) {
+  #inicio .tituloImg {
+    margin-top: 30%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+.navbarRuta {
+	padding-top: 1.5rem;
+  }
+  .navbarRuta .navbar-brand {
+	padding: 12px;
+	background-image: url("/img/logoBlanco.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 145px;
+	/*img {
+		height: 100%;
+		width: auto;
+	}*/
+  }
+  @media (max-width: 575.98px) {
+	.navbarRuta .navbar-brand {
+	  height: 85px;
+	  width: 132px;
+	}
+  }
+  .navbarRuta button.navbar-toggler {
+	background: #fff;
+  }
+  .navbarRuta .navbar-collapse .navbar-nav {
+	font-family: "Visby";
+	font-weight: 700;
+	font-size: 1rem;
+  }
+  @media (max-width: 991.98px) {
+	.navbarRuta .navbar-collapse .navbar-nav {
+	  background: #fff;
+	  padding: 8px 0;
+	  border-radius: 4px;
+	  text-align: end;
+	}
+  }
+  .navbarRuta .navbar-collapse .navbar-nav li.nav-item {
+	margin: 10px 16px;
+	border-bottom: 2px solid transparent;
+	transition: all 0.35s;
+  }
+  @media (max-width: 991.98px) {
+	.navbarRuta .navbar-collapse .navbar-nav li.nav-item {
+	  margin: 5px 0;
+	}
+  }
+  .navbarRuta .navbar-collapse .navbar-nav li.nav-item:hover {
+	border-bottom: 2px solid #fff;
+  }
+  @media (max-width: 991.98px) {
+	.navbarRuta .navbar-collapse .navbar-nav li.nav-item:hover {
+	  border-bottom: none;
+	  border-bottom: 2px solid transparent;
+	}
+  }
+  .navbarRuta .navbar-collapse .navbar-nav li.nav-item a.nav-link {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+  }
+  @media (max-width: 991.98px) {
+	.navbarRuta .navbar-collapse .navbar-nav li.nav-item a.nav-link {
+	  color: #270089;
+	  padding: 10px 18px;
+	  text-align: right;
+	}
+	.navbarRuta .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover {
+	  background: #D9D9D9;
+	  color: #270089;
+	}
+  }
+  .navbarRuta .navbar-collapse .navbar-nav a.dropdown-item {
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #270089;
+	text-align: left;
+  }
+  @media (max-width: 991.98px) {
+	.navbarRuta .navbar-collapse .navbar-nav a.dropdown-item {
+	  text-align: right;
+	  padding-right: 30px;
+	  font-weight: 500;
+	}
+  }
+  
+  .scrollDown, .scrolled {
+	background-color: white;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+	transition: all 0.35s;
+  }
+  .scrollDown .navbar-brand, .scrolled .navbar-brand {
+	padding: 12px;
+	background-image: url("/img/logoColor.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 145px;
+	/*img {
+		height: 100%;
+		width: auto;
+	}*/
+  }
+  @media (max-width: 575.98px) {
+	.scrollDown .navbar-brand, .scrolled .navbar-brand {
+	  height: 75px;
+	  width: 132px;
+	}
+  }
+  .scrollDown button.navbar-toggler, .scrolled button.navbar-toggler {
+	background: #fff;
+  }
+  .scrollDown .navbar-collapse .navbar-nav, .scrolled .navbar-collapse .navbar-nav {
+	font-family: "Visby";
+	font-weight: 700;
+	font-size: 1rem;
+  }
+  @media (max-width: 991.98px) {
+	.scrollDown .navbar-collapse .navbar-nav, .scrolled .navbar-collapse .navbar-nav {
+	  background: #fff;
+	  padding: 8px 0;
+	  border-radius: 4px;
+	  text-align: end;
+	}
+  }
+  .scrollDown .navbar-collapse .navbar-nav li.nav-item, .scrolled .navbar-collapse .navbar-nav li.nav-item {
+	margin: 10px 16px;
+	border-bottom: 2px solid transparent;
+  }
+  .scrollDown .navbar-collapse .navbar-nav li.nav-item:hover, .scrolled .navbar-collapse .navbar-nav li.nav-item:hover {
+	border-bottom: 2px solid #270089;
+  }
+  @media (max-width: 991.98px) {
+	.scrollDown .navbar-collapse .navbar-nav li.nav-item:hover, .scrolled .navbar-collapse .navbar-nav li.nav-item:hover {
+	  border-bottom: none;
+	}
+  }
+  @media (max-width: 991.98px) {
+	.scrollDown .navbar-collapse .navbar-nav li.nav-item, .scrolled .navbar-collapse .navbar-nav li.nav-item {
+	  margin: 5px 0;
+	  border-bottom: 2px solid transparent;
+	}
+  }
+  .scrollDown .navbar-collapse .navbar-nav li.nav-item a.nav-link, .scrolled .navbar-collapse .navbar-nav li.nav-item a.nav-link {
+	text-transform: uppercase;
+	color: #270089;
+	text-align: center;
+  }
+  .scrollDown .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover, .scrolled .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover {
+	color: #270089;
+  }
+  @media (max-width: 991.98px) {
+	.scrollDown .navbar-collapse .navbar-nav li.nav-item a.nav-link, .scrolled .navbar-collapse .navbar-nav li.nav-item a.nav-link {
+	  color: #270089;
+	  padding: 10px 18px;
+	  text-align: right;
+	}
+	.scrollDown .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover, .scrolled .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover {
+	  background: #D9D9D9;
+	  color: #270089;
+	}
+  }

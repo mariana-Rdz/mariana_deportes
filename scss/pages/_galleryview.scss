@@ -1,0 +1,17 @@
+nav.galleryNav {
+    .container-fluid {
+        padding: 15px 25px;
+        @media (max-width: 575.98px) {
+            padding: 10px 16px;
+        }
+
+        .galleryLogo {
+            height: 50px;
+            width: auto;
+            @media (max-width: 575.98px) {
+                height: 40px;
+            }
+        }
+    }
+}
+

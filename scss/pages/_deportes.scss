@@ -1,0 +1,35 @@
+.depList {
+    list-style: none;
+    padding-left: 0;
+
+    .depItem {
+        padding: 5px 5px 5px 10px;
+        transition: 0.25s ease-out;
+        border-radius: 3px;
+        margin-bottom: 5px;
+        
+        &:hover {
+            background: #FFEBF6;
+        }
+
+        .depLink {
+            font-family: $f-principal;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            color: $c-negro;
+        }
+    }
+}
+
+#detalleDeporte {
+    position: relative;
+
+    img.figuraBtm {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

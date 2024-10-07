@@ -1,0 +1,31 @@
+//abstracts
+@import "./abstracts/variables";
+
+//base
+@import "./base/colors";
+@import "./base/typography";
+
+//components
+@import "./components/botones";
+@import "./components/cards";
+@import "./components/cardNoticias";
+@import "./components/eventoCard";
+@import "./components/divider";
+@import "./components/galeriathumb";
+@import "./components/modalNoticias";
+@import "./components/navend";
+@import "./components/swiper";
+@import "./components/swiperDeportes";
+
+//layout
+@import "./layout/breadcrumb";
+@import "./layout/contacto";
+@import "./layout/headerInt";
+@import "./layout/navbar";
+
+//pages
+@import "./pages/documentacion";
+@import "./pages/deportes";
+@import "./pages/eventos";
+@import "./pages/galleryview";
+@import "./pages/principal";    	

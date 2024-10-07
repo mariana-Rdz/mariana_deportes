@@ -1,0 +1,21 @@
+.nav-pills.navEventos {
+    li.nav-item {
+        width: 50%;
+        
+        button.nav-link {
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+            color: $c-gris;
+            @media (max-width: 575.98px) {
+                font-size: 1.05rem;
+            }
+        }
+        button.nav-link.active {
+            background: $c-blanco;
+            border-bottom: 2px solid $c-marino;
+            color: $c-marino;
+            
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.eventoCard {
+    background: $c-blanco;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-decoration: none;
+    transition: all 0.3s;
+    .imgWrap {
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+
+        position: relative;
+        .fecha {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            display: block;
+            background: $c-verde;
+            color: $c-negro;
+            font-family: $f-principal;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            padding: 10px;
+        }
+        .fecha.fechaAnt {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            display: block;
+            background: $c-carbon;
+            color: $c-blanco;
+            font-family: $f-principal;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            padding: 10px;
+        }
+    }
+    .eventoInfo {
+        text-align: left;
+        p.subtitulo, p.texto.ubicación {
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px 0 rgba(4,41,64,.15);
+        border-radius: 5px;
+        transform: translateY(-7px);
+    }
+}
+
+.eventoCard.anterior {
+    opacity: 0.7;
+    &:hover {
+        opacity: 1;
+    }
+}
+

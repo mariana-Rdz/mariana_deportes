@@ -1,0 +1,26 @@
+footer {
+    padding: 50px 10px 30px;
+    border-top: 1px solid $c-gris;
+    background: $c-blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     .logoWrap {
+        width: 350px;
+        height: 60px;
+        margin: 25px 0; 
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 575.98px) {
+            width: 260px;
+            height: 43px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+     }
+}
